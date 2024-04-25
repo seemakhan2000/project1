@@ -1,0 +1,403 @@
+
+.bg-light {
+    background-color: #e5ccc9 !important;
+}
+
+.th {
+    padding: 0.5rem 0.5rem;
+    background-color:#06a972 ;
+    border-bottom-width: 0px;
+   
+}
+
+.tbody{
+    background-color: aliceblue;
+    }
+.container{
+    max-width: 844px;
+    height: 750;
+    border: 5px solid rgb(194, 189, 189);
+    background-color:black;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color:rgb(83, 7, 224);
+    background-color:azure;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: red;
+    color:#e5ccc9;
+    border-radius: 8px;
+    border-color: aliceblue;
+}
+.modal-title fs-5{
+    color:#212529
+}
+.modal-header {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid black;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+    background-color: aqua;
+    color:#212529; 
+    text-align: center;
+    font-size: 20px; /* Adjust the font size to your preference */
+}
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: rgb(248, 248, 248);
+    background-color: #fff;
+    display: flex; /* Use flexbox to center the table */
+    justify-content: center; /* Center the table horizontally */
+    align-items: center; /* Center the table vertically */
+    min-height: 100vh;
+    padding: 0 20px; /* Ensure the body covers the entire viewport height */
+   
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  table {
+    width: 50%; /* Set the width of the table */
+    border-collapse: collapse; /* Collapse table borders */
+  }
+
+  
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 20;
+    
+
+}
+.tbody {
+    background-color: beige;
+}
+
+
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+}
+.modal-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+    background-color: aqua;
+}
+
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #212529;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #212529;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: #212529;
+    --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #dee2e6;
+    border-collapse: collapse;
+}
+
+
+
+
+
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0D6EF9;
+    margin-bottom: 646px;
+    margin: 0;
+    margin-right: 10px;
+    float: right;
+    margin-bottom: 5px}
+
+.con {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.center {
+    width: 93%;
+    height: 360px;
+    margin-bottom: 990px;
+}
+
+
+
+.form-box {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ccc;
+    text-align: center;
+}
+
+.form-box h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 15px;
+    background-color: #aaa;
+    color: #212529;
+    border-radius: 3px;
+    display: flex;
+    max-height: 65px;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+    align-items: center;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 40px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-field input:focus {
+    border-color: #0d6efd;
+}
+
+.input-field input::placeholder {
+    color: #aaa;
+}
+
+input[type="submit"] {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+input[type="submit"]:hover {
+    background-color: #0b5ed7;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color:#dee2e6;
+    color: #e5ccc9;
+    border-radius: 8px;
+    border-color: aliceblue;
+    color:#212529
+}
+
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.register {
+    width: 372px;
+    margin: auto; /* This will center the div horizontally */
+    padding: 20px; /* Add some padding for better spacing */
+    background-color: #fff;
+    color: black;
+    text-align: center; /* This will center-align the text inside the div */
+    border-radius: 8px; /* Add some rounded corners to the div */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    float:left;
+}
+.register input[type="text"],
+.register input[type="radio"] {
+    width: 350px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+/* Style the radio buttons and labels to display them side by side */
+.register input[type="radio"],
+.register label {
+    display: inline-block; /* Display them side by side */
+    vertical-align: middle; /* Align them vertically in the middle */
+    margin-right: 10px; /* Add some space between radio buttons and labels */
+}
+
+
+
+
+
+
+
+
+label {
+    text-align: left; /* Align text inside label to the left */
+}
+/* login form*/
+
+
+.h3 {
+    text-align: center;
+    color: #212529;
+    margin-bottom: 20px;
+}
+/* login form */
+.con {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(167, 245, 245);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color:#212529
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.cancelbtn {
+    margin-right: 10px;
+    margin-top: auto;
+    float: left;
+}
+
+.psw {
+    font-size: 14px;
+    float: right;
+    margin-top: auto;
+    float: right;
+}
+/* Optional: You can adjust the styles based on your needs */
+#btn {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0D6EF9;
+    margin-bottom: 646px;
+    margin: 0;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+
+/* register form */
+.cons {
+    width: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgb(167, 245, 245);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color:#212529
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.cancelbtn {
+    margin-right: 10px;
+    margin-top: auto;
+    float: left;
+}
+
+.psw {
+    font-size: 14px;
+    float: right;
+    margin-top: auto;
+    float: right;
+}
+/* Optional: You can adjust the styles based on your needs */
+#btn {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0D6EF9;
+    margin-bottom: 646px;
+    margin: 0;
+    margin-right: 10px;
+    float: left;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
