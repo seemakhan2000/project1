@@ -7,6 +7,11 @@ const cors = require('cors');
 const { json } = require("express");
 const formRoute = require('./route/route.js'); 
 const { connectToMongoDB } = require('./db/connectMongoDB.js');
+// Import the registerUser function from the route file
+const  registerUser  = require('./route/route.js');
+
+//console.log(process.env.JWT_SECRET)
+
 //Create an instance of the express application
 const api = express();
 
@@ -17,6 +22,8 @@ api.use(bodyParser.urlencoded({ extended: false }));
 
 //Mount the formRoutes to '/form'
 api.use('/form', formRoute);
+// Register route
+api.use('/signup', registerUser);
 
 
 // Try connecting to MongoDB
@@ -27,7 +34,8 @@ try {
   
 }
 
-
+// Start server
+const PORT = process.env.PORT || 5000;
 //Start the server on port 5000
 api.listen(5000, () => {
   console.log('Server is running on port 5000');
