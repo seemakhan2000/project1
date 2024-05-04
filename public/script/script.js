@@ -105,7 +105,7 @@ async function deleteUser(id) {
   }
   //this line defines a JavaScript function named makeEditable. It takes one parameter called element,
 function makeEditable(element) {
-  element.contentEditable = true;
+  element.contentEditable ="true" ;
   element.focus();
 }
 function updateUserInCell(id, index, formData) {
@@ -237,115 +237,8 @@ function validation() {
   }
 
   return isValid; // Return the overall validation status
+
 }
-
-
-
-
-
-
-
-
-
-//login form
-document.addEventListener('DOMContentLoaded', () => {
-  const loginForm = document.querySelector('.con form');
-  
-  loginForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-      
-      const email = document.querySelector('[name="loginEmail"]').value;
-      const password = document.querySelector('[name="psw"]').value;
-      
-    
-    console.log(`email: ${email}`);
-      console.log(`Password: ${password}`);
-      // Call a function to handle the login logic
-      loginUser(email, password);
-  });
-});
-
-function loginUser(email, password) {
-  const loginData = {
-      email:email,
-      password: password
-  };
-  console.log("Login data being sent:", loginData);
-  fetch("http://localhost:5000/form/login", {
-    
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(loginData)
-     
-  })
-
-  .then(res => {
-    if (!res.ok) {
-        throw new Error('Login failed');
-    }
-    return res.json();
-  })
-  .then(data => {
-    console.log("Login successful:", data);
-    // Save the token to local storage
-    localStorage.setItem('token', data.token);
-    
-    // Optionally, you can redirect the user to another page or perform other actions after successful login
-    window.location.href = "/dashboard"; // Redirect to dashboard after successful login
-  })
-  .catch(error => {
-    console.log("Error:", error);
-  
-  });
-}
-
-
-
-
-
-// Register form
-document.addEventListener('DOMContentLoaded', () => {
-  const registerFormData = document.querySelector('.cons ');
-  registerFormData.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    var name = document.querySelector('input[name="registerName"]').value;
-    var email = document.querySelector('input[name="registerEmail"]').value;
-    var password = document.querySelector('input[name="registerpsw"]').value;
-
-    var registerData = {
-        name: name,
-        email: email,
-        password: password
-    };
-
-    console.log("Register data:", registerData);
-    registerUser(registerData);
-  }); // <-- Added closing parenthesis for addEventListener
-
-  function registerUser(registerData) {
-    console.log("Sending POST request with register data:", registerData); 
-    fetch("http://localhost:5000/form/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(registerData)
-    })
-    .then((res) => {
-        if (!res.ok) {
-            throw new Error("Registration failed");
-        }
-        return res.json();
-    })
-    .then((data) => {
-        console.log("Registration successful:", data);
-        
-    })
-    .catch((error) => {
-        console.log("Error:", error);
-    });
-  } 
-}); 
-
 
 
 
